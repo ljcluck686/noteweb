@@ -8,8 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.81.1",
+    "autoprefixer": "^10.4.22",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "vue": "^3.2.13",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -32,7 +37,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
